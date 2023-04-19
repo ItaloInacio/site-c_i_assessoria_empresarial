@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Definindo metadados do documento -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Identificação do autor -->
+    <meta name="author" content="Ítalo Henrique Inácio dos Santos">
+    <meta name="description" content="Autor é um especialista em marketing digital com mais de 2 anos de experiência. Atualmente, trabalha como consultor para empresas de tecnologia e publicidade.">
+
+    <!-- Definindo o título da página -->
+    <title>C & I Assessoria Empresarial</title>
+
+    <!-- Importando a folha de estilo do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Importando folha de estilo customizada (Eu estava usando o CSS externo, so que achei melhor colocá-lo interno)-->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Importando a fonte Montserrat do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .navbar-nav .nav-link.active:active {
+            border-bottom: 3px solid rgba(0, 0, 255, 0.459);
+        }
+
+        ul.card-text li {
+            list-style-type: none;
+        }
+
+
+        .parceiros-container {
+            padding: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+        }
+
+        #home {
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #home h2,
+        #home p {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- Logo da empresa -->
+                <a class="navbar-brand" href="#">
+                    <img style="height: 80px;" src="img/logo_transparente.png" alt="Logo da Empresa">
+                </a>
+                <!-- Botão de menu do Bootstrap -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- Itens do menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#parceiros">Parceiros</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#contatos">Contatos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#quemsomos">Quem Somos</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Botão de solicitação de orçamento -->
+            <div class="ml-auto">
+                <nav class="navbar bg-body-tertiary">
+                    <form>
+                        <button class="btn btn-primary me-2" type="button">
+                            <a href="#contatos" class="text-white">Solicitar Orçamento</a>
+                        </button>
+                    </form>
+                </nav>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção "Home" -->
+        <section id="home" style="background-image: url('img/homBoss.jpg'); height: 100vh;">
+            <div class="overlay"></div>
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-12 text-center">
+                        <h2>A<span>C&I Assessoria Empresarial</span></h2>
+                        <p>É uma empresa especializada em soluções financeiras e contábeis para negócios de todos os
+                            setores. Com uma equipe de profissionais altamente capacitados e experientes, estamos
+                            comprometidos em ajudar nossos clientes a alcançar o sucesso financeiro e operacional,
+                            fornecendo serviços personalizados e consultoria estratégica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+ <!-- Seção "Serviços" -->
+        <section id="servicos">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                    class="bi bi-pie-chart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8a8 8 0 1 1-8-8V0a8 8 0 0 1 8 8zM9 9h7V8H9v1zm-2 2h9v-1H7v1zm-3-3h12V7H4v1zm2-2h8V5H6v1zm-3-3h6V2H3v1zm2-2h4V1H5v1z" />
+                                </svg>
+                                <h5 class="card-title mt-4">Consultoria financeira</h5>
+                                <p class="card-text">Nossa equipe de especialistas em finanças está pronta para ajudar a
+                                    sua empresa a atingir seus objetivos financeiros, oferecendo análises, planejamento
+                                    e estratégias personalizadas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                    class="bi bi-wallet" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 0v8h10V4H3zm2 2h2v1H5V6zm3 0h2v1H8V6zm3 0h2v1h-2V6zm0 2h2v1h-2V8zm-3 0h2v1H8V8zm-3 0h2v1H5V8z" />
+                                </svg>
+                                <h5 class="card-title mt-4">Contabilidade</h5>
+                                <p class="card-text">Oferecemos serviços contábeis completos, incluindo gestão de
+                                    impostos, folha de pagamento, balanços patrimoniais e outros. Trabalhamos com
+                                    precisão e dedicação para garantir que sua empresa esteja em conformidade com as
+                                    regulamentações fiscais e legais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                    class="bi bi-wallet" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 0v8h10V4H3zm2 2h2v1H5V6zm3 0h2v1H8V6zm3 0h2v1h-2V6zm0 2h2v1h-2V8zm-3 0h2v1H8V8zm-3 0h2v1H5V8z" />
+                                </svg>
+                                <h5 class="card-title mt-4">Auditoria</h5>
+                                <p class="card-text">Nossos serviços de auditoria ajudam a garantir que sua empresa esteja em conformidade com os padrões contábeis e fiscais, além de identificar possíveis riscos e oportunidades de melhoria.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                    class="bi bi-wallet" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 0v8h10V4H3zm2 2h2v1H5V6zm3 0h2v1H8V6zm3 0h2v1h-2V6zm0 2h2v1h-2V8zm-3 0h2v1H8V8zm-3 0h2v1H5V8z" />
+                                </svg>
+                                <h5 class="card-title mt-4">Planejamento tributário</h5>
+                                <p class="card-text">Nossa equipe de especialistas em tributação ajuda a minimizar os impostos e a maximizar os lucros da sua empresa, por meio de planejamento tributário eficaz e estratégias personalizadas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+
+            </div>
+            </div>
+            </section>
+ <!-- Seção "Parceiros" -->
+            <section id="parceiros">
+                <div class="container">
+                    <div id="parceirosCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-deck ">
+                                    <div class="card shadow">
+                                        <img src="img/parceiros/mirante.jpg" alt="Logo do Parceiro">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mirante Madeira</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow">
+                                        <img src="img/parceiros/cocacolar.png" alt="Logo do Parceiro">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Coca-Cola</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow">
+                                        <img src="img/parceiros/ambev.png" alt="Logo do Parceiro">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ambev</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#parceirosCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#parceirosCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+                </div>
+                </div>
+            </section>
+ <!-- Seção "Nosso contatos" -->
+            <section id="contatos">
+                <div class="container ">
+                    <h2 class="text-center mb-5">Entre em contato conosco</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <form action="/enviar-contato" method="post">
+                                <div class="form-group">
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" id="nome" name="nome" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mensagem">Mensagem:</label>
+                                    <textarea id="mensagem" name="mensagem" class="form-control" rows="5"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!-- Seção "Quem Somos" -->
+            <section id="quemsomos">
+                <div class="container">
+                    <h2 class="text-center">Quem somos</h2>
+                    <p class="text-center">Somos uma empresa de tecnologia que cria soluções inovadoras para nossos
+                        clientes.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center">Missão</h3>
+                                    <p class="card-text">Nossa missão é fornecer soluções de tecnologia confiáveis e
+                                        inovadoras para nossos clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center">Visão</h3>
+                                    <p class="card-text">Queremos ser líderes em tecnologia de ponta e fornecer serviços
+                                        excepcionais em todo o mundo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h3 class="card-title text-center">Valores</h3>
+                                    <ul class="card-text">
+                                        <li>Excelência</li>
+                                        <li>Inovação</li>
+                                        <li>Compromisso com o Cliente</li>
+                                        <li>Integridade</li>
+                                        <li>Responsabilidade Social</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="container p-4">
+            <p>&copy; 2023 C&I Assessoria Empresarial. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- Importando o jQuery, Popper.js e o JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi4jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

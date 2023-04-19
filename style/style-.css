@@ -1,0 +1,350 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow: inherit;
+    }
+    
+    header #cabecalho {
+    background-color: #0d47a1;
+    height: 70px;
+    width: 100%;
+       }
+
+    .text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      max-width: 800px;
+      padding: 20px;
+  }
+  .navbar-collapse {
+    justify-content: center;
+  }
+  
+  
+    
+    #home {
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    }
+    
+    .imagemboss {
+   
+    }
+    
+    #container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    text-align: justify;
+    }
+    
+    #servicos {
+    transform: matrix();
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    }
+    
+    #servicos:target {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    
+    #servicos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+    }
+    #parceiros h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #333;
+        }
+    
+    #servicos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+    }
+    
+    #servicos li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    }
+    
+    #servicos li strong {
+    font-weight: bold;
+    }
+    
+    #servicos p {
+    font-size: 18px;
+    text-align: center;
+    }
+    
+    #parceiros {
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    }
+    
+    .slide {
+    justify-content: space-between;
+    text-align: center;
+    }
+    
+    .card {
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+    }
+    
+    .card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    }
+    
+    .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    }
+    
+    .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+    
+    #contatos {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    }
+    
+    #contatos h2 {
+    margin-top: 0;
+    text-align: center;
+    }
+    
+    #contatos label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    }
+    
+    #contatos input[type="text"],
+    #contatos input[type="email"],
+    #contatos textarea {
+    width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+            
+            #contatos textarea {
+            height: 150px;
+            }
+            
+            #contatos button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+            
+            #contatos button[type="submit"]:hover {
+            background-color: #45a049;
+            }
+
+            
+#quemsomos{     
+    transform: matrix();
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+    }
+    #servicos:target {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    #quemsomos h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      
+      #quemsomos ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+        text-align: justify;
+      }
+      
+      #quemsomos li {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+      
+      #quemsomos li strong {
+        font-weight: bold;
+      }
+      #quemsomos p {
+        font-size: 16px;
+        text-align: center;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 50px 0;
+      }
+      footer {
+        background-color: #f7f7f7;
+        color: #555;
+        padding: 40px 0;
+        text-align: center;
+      }
+      
+      footer p {
+        font-size: 16px;
+        margin: 0;
+        padding: 20px 0;
+      }
+      
+      footer p span {
+        color: #000;
+        font-weight: bold;
+      }
+                 
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.imagem_footer {
+    background-position: bottom;
+    position: fixed;
+}
+
+/* Estilo do botão orçamento*/
+.botaoorcamento {
+    box-shadow: 0px 10px 14px -7px #ffffff;
+    background-color: #0853d3;
+    border-radius: 21px;
+    display: flex;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 45px;
+    text-decoration: none;
+    border: 0px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.botaoorcamento a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    display: flex;
+}
+
+.botaoorcamento a:hover {
+    text-decoration: none;
+    border: wheat;
+}
+
+/* Definindo o estilo do cabeçalho */
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 50px;
+}
+
+
+/* Estilo do menu */
+#cabecalho nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo dos itens do menu */
+#cabecalho nav ul li {
+    margin-left: 30px;
+}
+
+/* Estilo dos links do menu */
+#cabecalho nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+/* Estilo dos links do menu quando estão sendo visualizados */
+#cabecalho nav ul li a:hover {
+    border: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
